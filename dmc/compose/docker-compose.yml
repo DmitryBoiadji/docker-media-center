@@ -23,6 +23,8 @@ services:
     volumes:
       - ${SERVICES_DIR}/jellyfin:/config
       - ${DATA_DIR}/media:/data/media
+    # devices: # Passgraphics passthrough for hardware encoding support
+    #   - /dev/dri:/dev/dri  
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.dmc-jellyfin.rule=Host(`${SUB_DOMAIN_JELLYFIN}.${DOMAIN}`)"
