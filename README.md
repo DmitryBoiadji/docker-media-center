@@ -37,6 +37,13 @@ git clone https://github.com/EdyTheCow/docker-media-center.git
 <b>Enviroment variables</b><br />
 Navigate to `dmc/compose/.env/` and edit these variables.
 
+<b>Create docker network</b><br />
+Create "global" network if needed 
+```
+docker network create global
+```
+
+
 | Variable | Default | Description |
 |---|---|---|
 | COMPOSE_PROJECT_NAME | dmc | The prefix for all of containers when started from the compose file |

@@ -9,7 +9,7 @@ networks:
 services:
 
   jellyfin:
-    image: lscr.io/linuxserver/jellyfin:latest
+    image: jellyfin/jellyfin:latest
     restart: unless-stopped
     #security_opt: # Required for Docker versions below 20.10.10, update Docker for long term solution. Source: https://docs.linuxserver.io/faq#jammy
     #  - seccomp=unconfined
